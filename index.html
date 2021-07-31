@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>MS1 - Conversor de Moedas</title>
+</head>
+
+<body>
+  <header id="cabecalho">
+    <h1>MS1 - Conversor de Moedas</h1>
+  </header>
+  <main id="caixa-principal">
+    <p class="paragrafo">Converter <strong>de:</strong></p>
+    <select class="select" name="" id="">
+      <option value="">R$ - Real Brasileiro</option>
+    </select>
+
+    <p class="paragrafo">Converter <strong>para:</strong></p>
+    <select class="select" id="select-moedas">
+      <option>US$ - Dólar Americano</option>
+      <option>€ - Euro</option>
+    </select>
+
+    <p class="paragrafo">Valor</p>
+    <input id="input" type="number" placeholder="R$ 10.000,00">
+
+    <button id="botao">Converter</button>
+
+    <section id="caixa-interna">
+      <div class="caixa-menor">
+        <img src="./img/Brasil.svg" alt="Ícone Brasil">
+        <p class="paragrafo">Real</p>
+        <p class="paragrafo-negrito" id="texto-real">10.000,00</p>
+      </div>
+ 
+      <img id="seta" src="./img/ArrowDown.svg" alt="Ícone Seta para baixo">
+
+      <div class="caixa-menor">
+        <img id="bandeira-moedas" src="./img/Usa.svg" alt="Ícone Estados Unidos">
+        <p class="paragrafo" id="texto-moedas">Dólar Americano</p>
+        <p class="paragrafo-negrito" id="input-moedas">$ 2.000,00</p>
+      </div>
+    </section>
+
+  </main>
+  <script src="/scripts.js"></script>
+</body>
+
+</html>
